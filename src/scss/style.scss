@@ -1,0 +1,27 @@
+@import "config";
+
+*,
+html,
+body {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	min-height: 100vh;
+
+	background-color: $light-grayish-blue;
+	font-size: $body-font-size;
+	font-family: $font-stack;
+	padding: 4.5rem 1.5rem;
+	line-height: 1.5;
+}
+main {
+	height: 100%;
+	width: 100%;
+}
+@import "utilities";
+@import "screen720";
+@import "screen1024";
+@import "screen1440";

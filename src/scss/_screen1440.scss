@@ -1,0 +1,43 @@
+@media screen and (min-width: 1440px) {
+	body {
+		display: grid;
+		place-content: center;
+	}
+
+	.container {
+		width: 80%;
+
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: 19rem 17rem;
+		grid-template-areas:
+			"card1 card1 card2 card5"
+			"card3 card4 card4 card5";
+
+		gap: 1.5rem;
+	}
+	//i needed to cancel the margin that I gave to the design of mobile/tablet
+	//working with mobile is a btter approche for me since it makes it easy to start styling then adding the complexity to the desktop design design
+	//but it is really IMPORTANT to use the grid for both layouts (mobile/desktop), and this is a really important tip that i learned from this project
+	.card--3,
+	.card--4,
+	.card--5 {
+		margin-bottom: 0rem;
+	}
+	.card--1 {
+		grid-area: card1;
+	}
+	.card--2 {
+		grid-area: card2;
+	}
+	.card--3 {
+		grid-area: card3;
+	}
+	.card--4 {
+		grid-area: card4;
+	}
+	.card--5 {
+		grid-area: card5;
+	}
+}

@@ -1,0 +1,43 @@
+@media screen and (min-width: 1024px) {
+	body {
+		display: grid;
+		place-content: center;
+	}
+	.container {
+		width: 80%;
+
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, fit-content);
+		grid-template-areas:
+			"card1 card1 card2 "
+			"card3 card4 card4 "
+			"card5 card5 card5";
+
+		gap: 1.5rem;
+		section {
+			margin: 0;
+		}
+	}
+	.card--3,
+	.card--4,
+	.card--5 {
+		margin-bottom: 0rem;
+	}
+	.card--1 {
+		grid-area: card1;
+	}
+	.card--2 {
+		grid-area: card2;
+	}
+	.card--3 {
+		grid-area: card3;
+	}
+	.card--4 {
+		grid-area: card4;
+	}
+	.card--5 {
+		grid-area: card5;
+	}
+}
